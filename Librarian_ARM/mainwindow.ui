@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>790</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>790</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>790</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Librarian</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources/images.qrc">
+    <normaloff>:/icon.jpeg</normaloff>:/icon.jpeg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+	font-family: serif;
+    font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;
+	
+}
+
+QPushButton {
+
+	background:rgb(137, 249, 255);
+	border: 3px solid rgb(78, 208, 255);
+	
+	padding: 10px;
+	border-radius: 20px;
+
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="pages">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>750</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>750</width>
+      <height>500</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>750</width>
+      <height>500</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="pages_user">
+     <attribute name="title">
+      <string>Главная страница</string>
+     </attribute>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>689</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="mainPage_buttonUserDebtors">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>Список задолженников</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="mainPage_buttonUserInfo">
+        <property name="text">
+         <string>Информация о пользователях</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_8">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="mainPage_buttonUserAdd">
+        <property name="text">
+         <string>Добавить пользователя</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="mainPage_buttonUserDelete">
+        <property name="text">
+         <string>Удалить пользователя</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>312</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>677</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="pages_book">
+     <attribute name="title">
+      <string>Книга</string>
+     </attribute>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>677</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bookPage_buttonBookCondition">
+        <property name="text">
+         <string>Состояние книг</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bookPage_buttonBookGet">
+        <property name="text">
+         <string>Выдача книги</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bookPage_buttonBookBorrow">
+        <property name="text">
+         <string>Возврат книги</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bookPage_buttonBookExtension">
+        <property name="text">
+         <string>Продление книги</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bookPage_buttonBookOrder">
+        <property name="text">
+         <string>Добавить книгу</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>677</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>150</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>790</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menubar_user">
+    <property name="title">
+     <string>Пользователь</string>
+    </property>
+    <addaction name="menubar_user_debtors"/>
+    <addaction name="menubar_user_information"/>
+    <addaction name="separator"/>
+    <addaction name="menubar_user_add"/>
+    <addaction name="menubar_user_delete"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menubar_book">
+    <property name="title">
+     <string>Книга</string>
+    </property>
+    <addaction name="menubar_book_information"/>
+    <addaction name="menubar_book_get"/>
+    <addaction name="menubar_book_borrow"/>
+    <addaction name="menubar_book_extense"/>
+   </widget>
+   <widget class="QMenu" name="menubar_about">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="menubar_about_info"/>
+   </widget>
+   <addaction name="menubar_user"/>
+   <addaction name="menubar_book"/>
+   <addaction name="menubar_about"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="menubar_user_add">
+   <property name="text">
+    <string>Добавить пользователя</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Задолженники </string>
+   </property>
+  </action>
+  <action name="menubar_user_delete">
+   <property name="text">
+    <string>Удалить пользователя</string>
+   </property>
+  </action>
+  <action name="menubar_user_debtors">
+   <property name="text">
+    <string>Задолженники</string>
+   </property>
+  </action>
+  <action name="menubar_book_to_byNumber">
+   <property name="text">
+    <string>Поиск по номеру</string>
+   </property>
+  </action>
+  <action name="menubar_book_to_byName">
+   <property name="text">
+    <string>Поиск по названию</string>
+   </property>
+  </action>
+  <action name="menubar_book_extension">
+   <property name="text">
+    <string>Продление книги по номеру</string>
+   </property>
+  </action>
+  <action name="menubar_user_to_byNumber">
+   <property name="text">
+    <string>Перейти по номеру</string>
+   </property>
+  </action>
+  <action name="menubar_user_to_byName">
+   <property name="text">
+    <string>Перейти по имени</string>
+   </property>
+  </action>
+  <action name="menubar_userInterface">
+   <property name="text">
+    <string>Интерфейс пользователя</string>
+   </property>
+  </action>
+  <action name="menubar_bookInterface">
+   <property name="text">
+    <string>Интерфейс книги</string>
+   </property>
+  </action>
+  <action name="menubar_mainPage">
+   <property name="text">
+    <string>Главная страница</string>
+   </property>
+  </action>
+  <action name="menubar_about_info">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="menubar_user_information">
+   <property name="text">
+    <string>Информация о пользователях</string>
+   </property>
+  </action>
+  <action name="menubar_book_information">
+   <property name="text">
+    <string>Информация о книгах</string>
+   </property>
+  </action>
+  <action name="menubar_book_get">
+   <property name="text">
+    <string>Выдача книги</string>
+   </property>
+  </action>
+  <action name="menubar_book_borrow">
+   <property name="text">
+    <string>Возврат книги</string>
+   </property>
+  </action>
+  <action name="menubar_book_extense">
+   <property name="text">
+    <string>Продление книги</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>pages</tabstop>
+  <tabstop>mainPage_buttonUserDebtors</tabstop>
+  <tabstop>mainPage_buttonUserInfo</tabstop>
+  <tabstop>mainPage_buttonUserAdd</tabstop>
+  <tabstop>mainPage_buttonUserDelete</tabstop>
+  <tabstop>bookPage_buttonBookCondition</tabstop>
+  <tabstop>bookPage_buttonBookGet</tabstop>
+  <tabstop>bookPage_buttonBookBorrow</tabstop>
+  <tabstop>bookPage_buttonBookExtension</tabstop>
+  <tabstop>bookPage_buttonBookOrder</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resources/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
