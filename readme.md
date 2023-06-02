@@ -36,12 +36,12 @@
 
 ## UML-Диаграмма
 ### АРМ библиотекаря
-![[librarianD.png]]
+![UML librarian](https://github.com/ywyww/Creative-Work/blob/main/librarianD.png)
 Как видно из диаграммы выше, три класса: FormGetBorrow, Dialog, FormBD агрегируют к классу MainWindow, так как MainWindow содержит экземпляры данных классов. 
 Помимо этого, вышеупомянутые классы связаны с перечислениями, которые предоставляют удобочитаемость кода в функциях, где использовался оператор switch.
 
 ### Задача коммивояжера
-![[graph.png]]
+![UML salesman](https://github.com/ywyww/Creative-Work/blob/main/graph.png)
 
 ## Видеоролик
 Видеоролик лежит по ссылке https://youtu.be/W9ntP2B8F48
